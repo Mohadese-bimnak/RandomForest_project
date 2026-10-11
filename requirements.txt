@@ -1,0 +1,26 @@
+# ---------------------------------------------------------------------------
+# Requirements for: Network Intrusion Detection System (NIDS) with Random Forest
+# ---------------------------------------------------------------------------
+#
+# Dataset (NOT included in this repo — download separately):
+#   CICIDS2017 — Canadian Institute for Cybersecurity, University of New Brunswick
+#   https://www.unb.ca/cic/datasets/ids-2017.html
+#
+#   This project uses 4 of the dataset's CSV files. Download them and place
+#   them in the project root (same folder as the notebook) before running:
+#
+#     - Monday-WorkingHours_pcap_ISCX.csv                      (benign traffic only)
+#     - Tuesday-WorkingHours_pcap_ISCX.csv                     (benign + FTP-Patator, SSH-Patator)
+#     - Friday-WorkingHours-Afternoon-PortScan_pcap_ISCX.csv   (benign + PortScan)
+#     - Friday-WorkingHours-Afternoon-DDos_pcap_ISCX.csv       (benign + DDoS)
+#
+# Install with:
+#   pip install -r requirements.txt
+# ---------------------------------------------------------------------------
+
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+seaborn>=0.12
+scikit-learn>=1.3
+jupyter>=1.0
